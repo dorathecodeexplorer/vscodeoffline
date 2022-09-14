@@ -13,7 +13,7 @@ services:
       #- ./vscoffline/:/opt/vscoffline/:ro
       - ./artifacts/:/artifacts/
     environment:
-      - SYNCARGS=--sync
+      - SYNCARGS=--sync --vscode-version=1.67.0 --total-recommended=2000
       # Enable to sync all extensions
       #- SYNCARGS=--syncall
       # Enable a logfile
